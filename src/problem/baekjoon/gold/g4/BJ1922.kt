@@ -1,11 +1,9 @@
-package problem.baekjoon.gold.g1
+package problem.baekjoon.gold.g4
 
 import java.util.PriorityQueue
-import java.util.ArrayDeque
 
 fun main(args: Array<String>) {
-    data class Coodi(val y:Int, val x:Int)
-    data class Bridge(val src:Int, val dst:Int, val size:Int)
+    data class Line(val src: Int, val dst: Int, val cost: Int)
 
     class FastReader {
         val buffer = ByteArray(1 shl 16)
@@ -43,30 +41,39 @@ fun main(args: Array<String>) {
     }
 
     val fs = FastReader()
-    val seaH = fs.nextInt()
-    val seaW = fs.nextInt()
-    val map = Array(seaH) { IntArray(seaW) }
-    val unvisited = Array(seaH) { BooleanArray(seaW) { true } }
+    val cptCnt = fs.nextInt()
+    val lineCnt = fs.nextInt()
 
-    for (i in 0 until seaH) {
-        for (j in 0 until seaW) {
-            map[i][j] = fs.nextInt()
+    val pq = PriorityQueue<Line>(lineCnt, compareBy { it.cost })
+
+    repeat(lineCnt) {
+        pq.add(Line(fs.nextInt(), fs.nextInt(), fs.nextInt()))
+    }
+
+    val parent = IntArray(cptCnt + 1) { it }
+
+    fun find(x: Int): Int {
+        if (x != parent[x]) parent[x] = find(parent[x])
+        return parent[x]
+    }
+
+    fun union(new: Int, old: Int) {
+        val new = find(new)
+        val old = find(old)
+        if (new != old) parent[old] = new
+    }
+
+    var connectCnt = 0
+    var minCost = 0
+
+    while (connectCnt < cptCnt-1) {
+        val now = pq.poll()
+        if (find(now.src) != find(now.dst)) {
+            union(now.src, now.dst)
+            minCost += now.cost
+            ++connectCnt
         }
     }
 
-    fun isVaild(y: Int, x: Int): Boolean = y in 0 until seaH && x in 0 until seaW && unvisited[y][x]
-
-
-    var islandSrl = 1
-    val q = ArrayDeque<Coodi>()
-    for (i in 0 until seaH) {
-        for (j in 0 until seaW) {
-            if (unvisited[i][j]) {
-                q.add(Coodi(i, j))
-                while (q.isNotEmpty()) {
-                    val now = q.pop()
-                }
-            }
-        }
-    }
+    println(minCost)
 }
