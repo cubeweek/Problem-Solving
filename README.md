@@ -102,6 +102,13 @@
 
 </details>
 
+<details>
+<summary>MEDIUM</summary>
+
+<sub>[MinimizeHammingDistanceAfterSwapOperations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/).[src](src/problem/leetcode/medium/MinimizeHammingDistanceAfterSwapOperations.kt)</sub>
+
+</details>
+
 <!-- LEETCODE-AUTO-GENERATED:END -->
 
 
