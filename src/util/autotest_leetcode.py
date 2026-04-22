@@ -23,10 +23,10 @@ def find_repo_root():
 PROBLEM_DIR = find_repo_root()
 CACHE_DIR = os.path.join(find_repo_root(), "temp", ".leetcode_cache")
 
+
 def parse_input_with_types(input_str, param_types):
     """
     메서드 시그니처의 타입 정보를 바탕으로 입력값을 코틀린 코드로 변환
-    param_types: ['IntArray', 'IntArray', 'Array<IntArray>'] 등
     """
     # 1. 입력 문자열에서 값들만 분리 (쉼표 기준, 괄호 쌍 고려)
     input_content = re.sub(r'[a-zA-Z0-9]+\s*=\s*', '', input_str)
@@ -45,22 +45,35 @@ def parse_input_with_types(input_str, param_types):
     for i, val in enumerate(raw_values):
         target_type = param_types[i] if i < len(param_types) else "Any"
 
-        # 빈 배열 처리 (가장 중요한 부분!)
-        if val == "[]":
-            if "Array<IntArray>" in target_type: kt_args.append("emptyArray<IntArray>()")
-            elif "IntArray" in target_type: kt_args.append("intArrayOf()")
-            elif "Array" in target_type: kt_args.append("emptyArray()")
-            else: kt_args.append("intArrayOf()") # 기본값
-            continue
+        if val.startswith('['):
+            content = val[1:-1].strip()
 
-        # 2차원 배열 처리
-        if "Array<IntArray>" in target_type or val.startswith('[['):
-            inner = re.findall(r'\[([^\[\]]*)\]', val)
-            items = [f"intArrayOf({x})" if x.strip() else "intArrayOf()" for x in inner]
-            kt_args.append(f"arrayOf({', '.join(items)})")
-        # 1차원 배열 처리
-        elif "IntArray" in target_type or val.startswith('['):
-            kt_args.append(f"intArrayOf({val[1:-1]})")
+            # 빈 배열/리스트 처리
+            if not content:
+                if "Array<IntArray>" in target_type: kt_args.append("emptyArray<IntArray>()")
+                elif "IntArray" in target_type: kt_args.append("intArrayOf()")
+                elif "Array<String>" in target_type: kt_args.append("emptyArray<String>()")
+                elif "List" in target_type: kt_args.append("emptyList()")
+                else: kt_args.append("emptyArray()")
+                continue
+
+            # 2차원 정수 배열 처리 (Array<IntArray>)
+            if "Array<IntArray>" in target_type:
+                inner = re.findall(r'\[([^\[\]]*)\]', val)
+                items = [f"intArrayOf({x})" if x.strip() else "intArrayOf()" for x in inner]
+                kt_args.append(f"arrayOf({', '.join(items)})")
+            # 문자열 배열/리스트 처리 (Array<String>, List<String>)
+            elif "String" in target_type:
+                if "List" in target_type:
+                    kt_args.append(f"listOf({content})")
+                else:
+                    kt_args.append(f"arrayOf({content})")
+            # 정수 배열 처리 (IntArray)
+            elif "IntArray" in target_type:
+                kt_args.append(f"intArrayOf({content})")
+            # 기본 객체 배열 (Array<Int> 등)
+            else:
+                kt_args.append(f"arrayOf({content})")
         else:
             kt_args.append(val)
 
@@ -70,29 +83,34 @@ def generate_wrapped_kotlin(original_kt, input_str):
     with open(original_kt, 'r', encoding='utf-8') as f:
         content = f.read()
 
+    # 클래스 및 메서드 정보 추출
     class_name = re.search(r'class\s+([a-zA-Z0-9_]+)', content).group(1)
-
-    # 메서드 정보 추출 (이름, 파라미터, 반환 타입)
     method_match = re.search(r'fun\s+([a-zA-Z0-9_]+)\s*\((.*?)\)(?:\s*:\s*([a-zA-Z0-9_<>\s]+))?', content, re.DOTALL)
     method_name = method_match.group(1)
     params_raw = method_match.group(2)
     return_type = method_match.group(3).strip() if method_match.group(3) else "Unit"
 
-    # 파라미터 타입 추출
+    # 파라미터 타입 추출 및 인자 파싱
     param_types = [p.split(':')[-1].strip() for p in params_raw.split(',') if ':' in p]
     parsed_args = parse_input_with_types(input_str, param_types)
 
-    # 반환 타입에 따른 출력 로직 결정 (Python 단계에서 결정하여 VerifyError 방지)
+    # 반환 타입에 따른 '정확한' 출력 구문 생성 (VerifyError 및 모호성 해결)
+    # 백엔드 개발자로서 타입 안전성을 보장하기 위해 구체적인 포맷 지정
     if return_type == "IntArray":
         print_stmt = f"println(instance.{method_name}({parsed_args}).joinToString(\",\", \"[\", \"]\"))"
+    elif "List<String>" in return_type or "Array<String>" in return_type:
+        # 문자열 리스트/배열은 각 요소에 따옴표를 붙여 출력 (리트코드 포맷)
+        print_stmt = f"println(instance.{method_name}({parsed_args}).joinToString(\",\", \"[\", \"]\") {{ \"\\\"$it\\\"\" }})"
+    elif "List" in return_type:
+        print_stmt = f"println(instance.{method_name}({parsed_args}).joinToString(\",\", \"[\", \"]\"))"
     elif "Array<IntArray>" in return_type:
-        print_stmt = f"println(instance.{method_name}({parsed_args}).contentDeepToString())"
+        print_stmt = f"println(instance.{method_name}({parsed_args}).contentDeepToString().replace(\" \", \"\"))"
     elif "Array<" in return_type:
-        print_stmt = f"println(instance.{method_name}({parsed_args}).contentToString())"
+        print_stmt = f"println(instance.{method_name}({parsed_args}).contentToString().replace(\" \", \"\"))"
     elif return_type == "Unit":
         print_stmt = f"instance.{method_name}({parsed_args}); println(\"Done\")"
     else:
-        # Int, String 등 일반 타입은 그냥 출력 (자동 박싱에 맡김)
+        # Int, String 등 기본 타입 출력
         print_stmt = f"println(instance.{method_name}({parsed_args}))"
 
     wrapper = f"""

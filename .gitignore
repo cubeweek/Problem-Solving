@@ -22,3 +22,4 @@ Thumbs.db
 
 # 백준 자동 채점 사용 시 생성되는 캐시파일은 무시한다.
 .boj_cache/
+.leetcode_cache/
