@@ -105,7 +105,7 @@
 <details>
 <summary>MEDIUM</summary>
 
-<sub>[MinimizeHammingDistanceAfterSwapOperations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/).[src](src/problem/leetcode/medium/MinimizeHammingDistanceAfterSwapOperations.kt)</sub>
+<sub>[MinimizeHammingDistanceAfterSwapOperations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/).[src](src/problem/leetcode/medium/MinimizeHammingDistanceAfterSwapOperations.kt)</sub> <sub>[WordsWithinTwoEditsOfDictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/).[src](src/problem/leetcode/medium/WordsWithinTwoEditsOfDictionary.kt)</sub>
 
 </details>
 
