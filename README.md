@@ -84,7 +84,11 @@
   <tbody>
     <tr>
       <td width="50%"><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/">FindMinimumInRotatedSortedArrayIi</a> · <a href="src/problem/leetcode/hard/FindMinimumInRotatedSortedArrayIi.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/jump-game-iv/">JumpGameIv</a> · <a href="src/problem/leetcode/hard/JumpGameIv.kt">src</a></td>
+    </tr>
+    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/">MinimumInitialEnergyToFinishTasks</a> · <a href="src/problem/leetcode/hard/MinimumInitialEnergyToFinishTasks.kt">src</a></td>
+      <td width="50%"></td>
     </tr>
   </tbody>
 </table>
