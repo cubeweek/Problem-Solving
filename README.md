@@ -28,33 +28,66 @@
 <details>
 <summary>EASY</summary>
 
-| 문제 목록 1 | 문제 목록 2 |
-| :--- | :--- |
-| [CheckIfArrayIsGood](https://leetcode.com/problems/check-if-array-is-good/) · [src](src/problem/leetcode/easy/CheckIfArrayIsGood.kt) | [PlusOne](https://leetcode.com/problems/plus-one/) · [src](src/problem/leetcode/easy/PlusOne.kt) |
-| [RotateString](https://leetcode.com/problems/rotate-string/) · [src](src/problem/leetcode/easy/RotateString.kt) | [SeparateTheDigitsInAnArray](https://leetcode.com/problems/separate-the-digits-in-an-array/) · [src](src/problem/leetcode/easy/SeparateTheDigitsInAnArray.kt) |
-| [TwoFurthestHousesWithDifferentColors](https://leetcode.com/problems/two-furthest-houses-with-different-colors/) · [src](src/problem/leetcode/easy/TwoFurthestHousesWithDifferentColors.kt) |  |
+<table width="100%">
+  <tbody>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/check-if-array-is-good/">CheckIfArrayIsGood</a> · <a href="src/problem/leetcode/easy/CheckIfArrayIsGood.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/plus-one/">PlusOne</a> · <a href="src/problem/leetcode/easy/PlusOne.kt">src</a></td>
+    </tr>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/rotate-string/">RotateString</a> · <a href="src/problem/leetcode/easy/RotateString.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/separate-the-digits-in-an-array/">SeparateTheDigitsInAnArray</a> · <a href="src/problem/leetcode/easy/SeparateTheDigitsInAnArray.kt">src</a></td>
+    </tr>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/two-furthest-houses-with-different-colors/">TwoFurthestHousesWithDifferentColors</a> · <a href="src/problem/leetcode/easy/TwoFurthestHousesWithDifferentColors.kt">src</a></td>
+      <td width="50%"></td>
+    </tr>
+  </tbody>
+</table>
 
 </details>
 
 <details>
 <summary>MEDIUM</summary>
 
-| 문제 목록 1 | 문제 목록 2 |
-| :--- | :--- |
-| [CheckIfThereIsAValidPathInAGrid](https://leetcode.com/problems/check-if-there-is-avalid-path-in-agrid/) · [src](src/problem/leetcode/medium/CheckIfThereIsAValidPathInAGrid.kt) | [FindMinimumInRotatedSortedArray](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) · [src](src/problem/leetcode/medium/FindMinimumInRotatedSortedArray.kt) |
-| [JumpGameIii](https://leetcode.com/problems/jump-game-iii/) · [src](src/problem/leetcode/medium/JumpGameIii.kt) | [MinimizeHammingDistanceAfterSwapOperations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) · [src](src/problem/leetcode/medium/MinimizeHammingDistanceAfterSwapOperations.kt) |
-| [MinimumMovesToMakeArrayComplementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) · [src](src/problem/leetcode/medium/MinimumMovesToMakeArrayComplementary.kt) | [RotatedDigits](https://leetcode.com/problems/rotated-digits/) · [src](src/problem/leetcode/medium/RotatedDigits.kt) |
-| [RotateFunction](https://leetcode.com/problems/rotate-function/) · [src](src/problem/leetcode/medium/RotateFunction.kt) | [RotateImage](https://leetcode.com/problems/rotate-image/) · [src](src/problem/leetcode/medium/RotateImage.kt) |
-| [RotateList](https://leetcode.com/problems/rotate-list/) · [src](src/problem/leetcode/medium/RotateList.kt) | [WordsWithinTwoEditsOfDictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/) · [src](src/problem/leetcode/medium/WordsWithinTwoEditsOfDictionary.kt) |
+<table width="100%">
+  <tbody>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/check-if-there-is-avalid-path-in-agrid/">CheckIfThereIsAValidPathInAGrid</a> · <a href="src/problem/leetcode/medium/CheckIfThereIsAValidPathInAGrid.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">FindMinimumInRotatedSortedArray</a> · <a href="src/problem/leetcode/medium/FindMinimumInRotatedSortedArray.kt">src</a></td>
+    </tr>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/jump-game-iii/">JumpGameIii</a> · <a href="src/problem/leetcode/medium/JumpGameIii.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/">MinimizeHammingDistanceAfterSwapOperations</a> · <a href="src/problem/leetcode/medium/MinimizeHammingDistanceAfterSwapOperations.kt">src</a></td>
+    </tr>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/minimum-moves-to-make-array-complementary/">MinimumMovesToMakeArrayComplementary</a> · <a href="src/problem/leetcode/medium/MinimumMovesToMakeArrayComplementary.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/rotated-digits/">RotatedDigits</a> · <a href="src/problem/leetcode/medium/RotatedDigits.kt">src</a></td>
+    </tr>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/rotate-function/">RotateFunction</a> · <a href="src/problem/leetcode/medium/RotateFunction.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/rotate-image/">RotateImage</a> · <a href="src/problem/leetcode/medium/RotateImage.kt">src</a></td>
+    </tr>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/rotate-list/">RotateList</a> · <a href="src/problem/leetcode/medium/RotateList.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/words-within-two-edits-of-dictionary/">WordsWithinTwoEditsOfDictionary</a> · <a href="src/problem/leetcode/medium/WordsWithinTwoEditsOfDictionary.kt">src</a></td>
+    </tr>
+  </tbody>
+</table>
 
 </details>
 
 <details>
 <summary>HARD</summary>
 
-| 문제 목록 1 | 문제 목록 2 |
-| :--- | :--- |
-| [FindMinimumInRotatedSortedArrayIi](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) · [src](src/problem/leetcode/hard/FindMinimumInRotatedSortedArrayIi.kt) | [MinimumInitialEnergyToFinishTasks](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) · [src](src/problem/leetcode/hard/MinimumInitialEnergyToFinishTasks.kt) |
+<table width="100%">
+  <tbody>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/">FindMinimumInRotatedSortedArrayIi</a> · <a href="src/problem/leetcode/hard/FindMinimumInRotatedSortedArrayIi.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/">MinimumInitialEnergyToFinishTasks</a> · <a href="src/problem/leetcode/hard/MinimumInitialEnergyToFinishTasks.kt">src</a></td>
+    </tr>
+  </tbody>
+</table>
 
 </details>
 
