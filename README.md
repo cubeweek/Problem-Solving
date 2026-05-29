@@ -35,7 +35,11 @@
       <td width="50%"><a href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/">CheckIfArrayIsSortedAndRotated</a> · <a href="src/problem/leetcode/easy/CheckIfArrayIsSortedAndRotated.kt">src</a></td>
     </tr>
     <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/count-the-number-of-special-characters-i/">CountTheNumberOfSpecialCharactersI</a> · <a href="src/problem/leetcode/easy/CountTheNumberOfSpecialCharactersI.kt">src</a></td>
       <td width="50%"><a href="https://leetcode.com/problems/minimum-common-value/">MinimumCommonValue</a> · <a href="src/problem/leetcode/easy/MinimumCommonValue.kt">src</a></td>
+    </tr>
+    <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/">MinimumElementAfterReplacementWithDigitSum</a> · <a href="src/problem/leetcode/easy/MinimumElementAfterReplacementWithDigitSum.kt">src</a></td>
       <td width="50%"><a href="https://leetcode.com/problems/plus-one/">PlusOne</a> · <a href="src/problem/leetcode/easy/PlusOne.kt">src</a></td>
     </tr>
     <tr>
@@ -58,31 +62,31 @@
   <tbody>
     <tr>
       <td width="50%"><a href="https://leetcode.com/problems/check-if-there-is-avalid-path-in-agrid/">CheckIfThereIsAValidPathInAGrid</a> · <a href="src/problem/leetcode/medium/CheckIfThereIsAValidPathInAGrid.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/count-the-number-of-special-characters-ii/">CountTheNumberOfSpecialCharactersIi</a> · <a href="src/problem/leetcode/medium/CountTheNumberOfSpecialCharactersIi.kt">src</a></td>
+    </tr>
+    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">FindMinimumInRotatedSortedArray</a> · <a href="src/problem/leetcode/medium/FindMinimumInRotatedSortedArray.kt">src</a></td>
-    </tr>
-    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/">FindThePrefixCommonArrayOfTwoArrays</a> · <a href="src/problem/leetcode/medium/FindThePrefixCommonArrayOfTwoArrays.kt">src</a></td>
+    </tr>
+    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/jump-game-iii/">JumpGameIii</a> · <a href="src/problem/leetcode/medium/JumpGameIii.kt">src</a></td>
-    </tr>
-    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/jump-game-vii/">JumpGameVii</a> · <a href="src/problem/leetcode/medium/JumpGameVii.kt">src</a></td>
+    </tr>
+    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/">MinimizeHammingDistanceAfterSwapOperations</a> · <a href="src/problem/leetcode/medium/MinimizeHammingDistanceAfterSwapOperations.kt">src</a></td>
-    </tr>
-    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/minimum-moves-to-make-array-complementary/">MinimumMovesToMakeArrayComplementary</a> · <a href="src/problem/leetcode/medium/MinimumMovesToMakeArrayComplementary.kt">src</a></td>
+    </tr>
+    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/rotated-digits/">RotatedDigits</a> · <a href="src/problem/leetcode/medium/RotatedDigits.kt">src</a></td>
-    </tr>
-    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/rotate-function/">RotateFunction</a> · <a href="src/problem/leetcode/medium/RotateFunction.kt">src</a></td>
+    </tr>
+    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/rotate-image/">RotateImage</a> · <a href="src/problem/leetcode/medium/RotateImage.kt">src</a></td>
-    </tr>
-    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/rotate-list/">RotateList</a> · <a href="src/problem/leetcode/medium/RotateList.kt">src</a></td>
-      <td width="50%"><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">SearchInRotatedSortedArray</a> · <a href="src/problem/leetcode/medium/SearchInRotatedSortedArray.kt">src</a></td>
     </tr>
     <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">SearchInRotatedSortedArray</a> · <a href="src/problem/leetcode/medium/SearchInRotatedSortedArray.kt">src</a></td>
       <td width="50%"><a href="https://leetcode.com/problems/words-within-two-edits-of-dictionary/">WordsWithinTwoEditsOfDictionary</a> · <a href="src/problem/leetcode/medium/WordsWithinTwoEditsOfDictionary.kt">src</a></td>
-      <td width="50%"></td>
     </tr>
   </tbody>
 </table>
