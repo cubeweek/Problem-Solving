@@ -36,7 +36,11 @@
     </tr>
     <tr>
       <td width="50%"><a href="https://leetcode.com/problems/count-the-number-of-special-characters-i/">CountTheNumberOfSpecialCharactersI</a> · <a href="src/problem/leetcode/easy/CountTheNumberOfSpecialCharactersI.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/">EarliestFinishTimeForLandAndWaterRidesI</a> · <a href="src/problem/leetcode/easy/EarliestFinishTimeForLandAndWaterRidesI.kt">src</a></td>
+    </tr>
+    <tr>
       <td width="50%"><a href="https://leetcode.com/problems/minimum-common-value/">MinimumCommonValue</a> · <a href="src/problem/leetcode/easy/MinimumCommonValue.kt">src</a></td>
+      <td width="50%"><a href="https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/">MinimumCostOfBuyingCandiesWithDiscount</a> · <a href="src/problem/leetcode/easy/MinimumCostOfBuyingCandiesWithDiscount.kt">src</a></td>
     </tr>
     <tr>
       <td width="50%"><a href="https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/">MinimumElementAfterReplacementWithDigitSum</a> · <a href="src/problem/leetcode/easy/MinimumElementAfterReplacementWithDigitSum.kt">src</a></td>
