@@ -51,12 +51,12 @@
       <td width="50%"><a href="https://leetcode.com/problems/plus-one/">PlusOne</a> · <a href="src/problem/leetcode/easy/PlusOne.kt">src</a></td>
     </tr>
     <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/rank-transform-of-an-array/">RankTransformOfAnArray</a> · <a href="src/problem/leetcode/easy/RankTransformOfAnArray.kt">src</a></td>
       <td width="50%"><a href="https://leetcode.com/problems/rotate-string/">RotateString</a> · <a href="src/problem/leetcode/easy/RotateString.kt">src</a></td>
-      <td width="50%"><a href="https://leetcode.com/problems/separate-the-digits-in-an-array/">SeparateTheDigitsInAnArray</a> · <a href="src/problem/leetcode/easy/SeparateTheDigitsInAnArray.kt">src</a></td>
     </tr>
     <tr>
+      <td width="50%"><a href="https://leetcode.com/problems/separate-the-digits-in-an-array/">SeparateTheDigitsInAnArray</a> · <a href="src/problem/leetcode/easy/SeparateTheDigitsInAnArray.kt">src</a></td>
       <td width="50%"><a href="https://leetcode.com/problems/two-furthest-houses-with-different-colors/">TwoFurthestHousesWithDifferentColors</a> · <a href="src/problem/leetcode/easy/TwoFurthestHousesWithDifferentColors.kt">src</a></td>
-      <td width="50%"></td>
     </tr>
   </tbody>
 </table>
